@@ -5,4 +5,5 @@ RUN echo deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main |  
 RUN apt-get update
 RUN apt-get install google-chrome-stable -y
 RUN npm -g config set user root
-RUN npm install -g node-sass
+RUN npm install -g node-sass@4.9.3
+RUN npm install -g puppeteer@1.8.0
